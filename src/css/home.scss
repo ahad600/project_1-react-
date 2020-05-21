@@ -161,6 +161,7 @@ body{
         margin-top: 1rem;
         background-color: $backcolor;
         grid-gap: 10px;
+        overflow: hidden;
 
         div:nth-child(1){
             text-align: center;
@@ -168,6 +169,8 @@ body{
 
         div{
             margin: 32px 0px;
+            transition: 0.8s;
+            position: relative;
                 .headL{
                     font-family: boldfont;
                 }
@@ -277,6 +280,7 @@ body{
             .card{
                 position: relative;
                 overflow: hidden;
+                transition: 0.8s;
                 img{
                     width: 100%;
                     height: auto;
@@ -334,14 +338,6 @@ body{
 
 }
 
-@keyframes card_ani3{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .contact{
     margin-top: 2rem;
@@ -362,6 +358,21 @@ body{
             outline: none;
             border: none;
         }
+        .submit_btn{
+            padding: 14px 0;
+            border: none;
+            background: blue;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.6s;
+            &:hover{
+                background: #305ddc;
+            }
+        }
+
+        
     }
 }
 
@@ -382,6 +393,14 @@ body{
 
 
 
+@keyframes card_ani3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 @keyframes card_ani{

@@ -12,12 +12,11 @@ window.onload = () =>{
 
     let all_skill = document.querySelectorAll('.label');
     let par = document.querySelectorAll('.par');
-    let ps = document.querySelector('.ps');
-    let himg = document.querySelector('.box1-img');
-    let Box2 = document.querySelector('.Box2');
-    let nav = document.querySelector(".nav");
+    let ps = document.querySelector('.ps');;
     let warap = document.querySelector(".toggler");
     let nc = document.querySelector(".nc");
+    let box1Card = document.querySelectorAll('.box1-container div');
+    let productCard = document.querySelectorAll(".card");
 
 
 
@@ -29,24 +28,6 @@ window.onload = () =>{
         }
         nc.classList.toggle("nav_phone");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     let o=null;
     let skill_arr = [90, 80, 60, 60, 70, 30]
@@ -89,9 +70,6 @@ window.onload = () =>{
 
     window.onscroll = function() {
         let ws = window.pageYOffset;
-        console.log(ws);
-
-
         if (window.innerHeight + 20 > (ps.offsetTop + ps.offsetHeight/2) - ws) {
 
             if (o === null) {
@@ -100,7 +78,41 @@ window.onload = () =>{
             o =1;
         }
 
+
+        for (let i = 0; i < box1Card.length; i++) {
+            if (window.innerHeight - 70 > (box1Card[i].offsetTop + box1Card[i].offsetHeight/2) - ws) {
+                box1Card[i].style.left = 0
+                box1Card[i].style.opacity = 1
+            }else{
+                if (i % 2) {
+                    box1Card[i].style.left = -100+"vw"
+                    box1Card[i].style.opacity = 0
+                }else{
+                    box1Card[i].style.left = 100+"vw"
+                    box1Card[i].style.opacity = 0
+                }
+            }
+        }
+
+        for (let i = 0; i < productCard.length; i++) {
+            if (window.innerHeight - 70 > (productCard[i].offsetTop + productCard[i].offsetHeight/2) - ws) {
+                productCard[i].style.transform = "scale(1)"
+            }else{
+                productCard[i].style.transform = "scale(0)"
+            }
+        }
+
+
+
+
+
+
+
+
+
+
     }
+
 }
 
 
@@ -330,7 +342,7 @@ class Contact extends Component {
                         <input placeholder="Your email *" type="email" name="email" className="lg-1-6 sm-1-12 inp"/>
                         <input placeholder="Your phone *" type="text" name="number" className="lg-7-12 sm-1-12 inp"/>
                         <textarea placeholder="Your message *" className="lg-1-12 inp" rows="7"></textarea>
-                        <input type="submit" value="submit"/>
+                        <input type="submit" className="submit_btn lg-1-2 sm-1-12" value="submit"/>
                     </form>
                 </div>
 
