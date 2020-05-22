@@ -128,7 +128,7 @@ body{
 .box1{
     .box1-img{
         background-image: url("./image/bg-3.jpg");
-        height: 76vh;
+        height: 84vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -136,7 +136,6 @@ body{
         justify-content: center;
         align-items: center;
         background-attachment: fixed;
-        filter: drop-shadow(0.8);
 
         div{
             width: 80%;
@@ -201,7 +200,7 @@ body{
             border-radius: 14px;
     
             .label{
-                background-color: rgb(62, 65, 253);
+                background-color: $blueColor;
                 height: 100%;
                 border-radius: 14px;
                 position: relative;
@@ -287,7 +286,7 @@ body{
                     height: auto;
                 }
                 .card_show{
-                    background-color: rgba(0, 0, 0, 0.514);
+                    background-color: rgba(0, 0, 0, 0.8);
                     position: absolute;
                     overflow: hidden;
                     top:0;
@@ -362,14 +361,14 @@ body{
         .submit_btn{
             padding: 14px 0;
             border: none;
-            background: blue;
+            background: RGBA(66, 99, 235, 0.6);
             color: #fff;
             font-size: 18px;
             border-radius: 4px;
             cursor: pointer;
             transition: 0.6s;
             &:hover{
-                background: #305ddc;
+                background: $blueColor;
             }
         }
 
