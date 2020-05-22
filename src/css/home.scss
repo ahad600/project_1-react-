@@ -127,7 +127,7 @@ body{
 
 .box1{
     .box1-img{
-        background-image: url("./image/bg-1.jpg");
+        background-image: url("./image/bg-3.jpg");
         height: 76vh;
         background-position: center;
         background-repeat: no-repeat;
@@ -136,6 +136,7 @@ body{
         justify-content: center;
         align-items: center;
         background-attachment: fixed;
+        filter: drop-shadow(0.8);
 
         div{
             width: 80%;
@@ -185,7 +186,7 @@ body{
 
 .Box2{
     padding: 1rem 6vw;
-    background-image: url("./image/237950-vintage-car-Headlights-photography.jpg");
+    background-image: url("./image/bg-4.jpg");
     // background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
