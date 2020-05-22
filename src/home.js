@@ -102,15 +102,6 @@ window.onload = () =>{
             }
         }
 
-
-
-
-
-
-
-
-
-
     }
 
 }
@@ -341,7 +332,7 @@ class Contact extends Component {
                         <input placeholder="Your name *" type="text" name="name" className="lg-1-12 sm-1-12 inp"/>
                         <input placeholder="Your email *" type="email" name="email" className="lg-1-6 sm-1-12 inp"/>
                         <input placeholder="Your phone *" type="text" name="number" className="lg-7-12 sm-1-12 inp"/>
-                        <textarea placeholder="Your message *" className="lg-1-12 inp" rows="7"></textarea>
+                        <textarea placeholder="Your message *" className="lg-1-12 inp" rows="10"></textarea>
                         <input type="submit" className="submit_btn lg-1-2 sm-1-12" value="submit"/>
                     </form>
                 </div>
@@ -362,7 +353,7 @@ class Footer extends Component {
 
         return (
             <footer className="footer">
-
+                2020 © AHAD
             </footer>
         )
     }

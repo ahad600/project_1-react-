@@ -46,6 +46,8 @@ body {
   position: absolute;
   top: 100%;
   width: 100%;
+  -webkit-animation: card_ani3 0.5s;
+          animation: card_ani3 0.5s;
 }
 
 .nav .nc a {
@@ -458,6 +460,18 @@ body {
   height: 200px;
   width: 100%;
   background-color: RGB(46, 52, 64);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  font-family: boldfont;
+  color: #fff;
 }
 
 @-webkit-keyframes card_ani3 {

@@ -47,6 +47,7 @@ body{
         position: absolute;
         top: 100%;
         width: 100%;
+        animation: card_ani3 0.5s;
 
         a {
             display: block;
@@ -383,6 +384,12 @@ body{
     height: 200px;
     width: 100%;
     background-color: $navColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: boldfont;
+    color: #fff;
 }
 
 
